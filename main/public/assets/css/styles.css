@@ -1,0 +1,267 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* global accessibility: assigning colors to variables */
+:root {
+  --background: #161616;
+  --secondary: #f5ee84;
+  --tertiary: #fab162;
+  --text: #fffdd0;
+}
+
+/* body: background color, fonts, and margin to whole page */
+body {
+  background-color: var(--background);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 50px;
+}
+
+/* all links */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/***** header section *****/
+header {
+  color: var(--tertiary);
+  display: flex;
+  justify-content: space-between;
+}
+
+/* title */
+h1 {
+  font-size: 40px;
+  margin: 0px;
+  margin-left: 2%;
+}
+
+/* navigation */
+nav {
+  text-align: right;
+  margin-right: 2%;
+  margin-bottom: 8%;
+}
+
+li {
+  display: inline;
+  padding: 20px;
+  font-size: 18px;
+}
+
+
+/****** main body ******/
+/*** intro section ***/
+#intro-section {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 200px;
+}
+
+/*intro left: text and button */
+.intro {
+  color: var(--text);
+  font-size: 28px;
+  margin-left: 5px;
+  line-height: 0;
+}
+
+.intro-large {
+  color: var(--secondary);
+  font-size: 100px;
+  font-weight: bolder;
+  margin: 0px;
+  line-height: 105%;
+}
+
+button {
+  background-color: var(--tertiary);
+  padding: 10px 30px;
+  border-radius: 8%;
+  color: var(--text);
+  margin-top: 30px;
+}
+
+#intro-section article {
+  padding-top: 50px;
+}
+
+/*intro right: profile picture */
+#profile-pic {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+}
+
+/*** about, work, and contact section ***/
+#about,
+#work,
+#contact {
+  margin: 0 2% 150px 2%;
+}
+
+h2 {
+  color: var(--secondary);
+  font-size: 64px;
+}
+
+p {
+  color: var(--text);
+  font-size: 24px;
+}
+
+/*** work section ***/
+#main-article,
+.sub-article {
+  position: relative;
+  margin-bottom: 3%;
+  border: 7px solid var(--secondary);
+  transition: all 0.2s ease-in-out;
+}
+
+#main-img {
+  display: grid;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+/* sub work */
+#sub-work {
+  display: grid;
+  grid-template-columns: 48.5% 48.5%;
+  column-gap: 3%;
+}
+
+.sub-article {
+  margin-bottom: 6%;
+}
+
+.sub-img {
+  display: grid;
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+/* work titles */
+.img-title {
+  color: var(--background);
+  padding: 0.5% 10%;
+  background-color: var(--secondary);
+  position: absolute;
+  bottom: -25px;
+}
+
+/* hover over work articles: make glow and lower image opacity */
+#work article:hover {
+  border: 10px solid var(--secondary);
+  box-shadow: 0px 0px 20px 5px var(--tertiary);
+}
+
+#work img:hover {
+  opacity: 50%;
+}
+
+
+/*** Contact section ***/
+#contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contact a {
+  color: var(--tertiary);
+  padding: 20px;
+  font-size: 18px;
+}
+
+/***** Footer Section *****/
+footer {
+  text-align: center;
+}
+
+/***** media screen: screen sizes for accessibility *****/
+@media screen and (max-width: 1007px) {
+
+  /* header */
+  header {
+    display: block;
+  }
+
+  header ul {
+    text-align: center;
+    margin: auto;
+    padding: 20px 0px 50px 0px;
+  }
+
+  header ul li {
+    display: block;
+    padding: 10px 0px 10px 0px;
+    margin: auto;
+    border-bottom: 1px solid var(--tertiary);
+    transition: all 1s ease-in-out;
+  }
+
+  /* intro section */
+  #intro-section {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0;
+  }
+
+  #intro-section article,
+  #profile-pic {
+    margin-bottom: 100px;
+    transition: all 1s ease-in-out;
+  }
+
+  /* work section */
+  #sub-work {
+    display: flex;
+    flex-wrap: wrap;
+    transition: all 1s ease-in-out;
+  }
+
+  .sub-article {
+    width: 100%;
+  }
+
+  /* contact section */
+  #contact,
+  #contact a {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+  /* intro section 75% smaller to fit on page comfortably */
+  #intro-section {
+    transform: scale(75%);
+    transition: all 1s ease-in-out;
+  }
+}
+
+/*
+Screen sizes & break points:
+Small (smaller than 640px)
+Medium (641px to 1007px)
+Large (1008px and larger)
+https://learn.microsoft.com/en-us/windows/apps/design/layout/screen-sizes-and-breakpoints-for-responsive-design
+*/
