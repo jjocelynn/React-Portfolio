@@ -188,8 +188,28 @@ p {
   opacity: 50%;
 }
 
+#contact {}
 
-/*** Contact section ***/
+.form-group {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.form-control {
+  background-color: black;
+  border-radius: 7px;
+  padding: 15px;
+  border: none;
+  color: var(--text);
+}
+
+.error-text{
+  font-size: 16px;
+}
+
+/* ** Contact section **
 #contact {
   display: flex;
   justify-content: space-between;
@@ -200,7 +220,7 @@ p {
   color: var(--tertiary);
   padding: 20px;
   font-size: 18px;
-}
+} */
 
 /***** Footer Section *****/
 footer {

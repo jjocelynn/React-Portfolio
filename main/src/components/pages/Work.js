@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Work() {
+export default function About() {
   return (
     <section id="work">
       <h2>work</h2>
