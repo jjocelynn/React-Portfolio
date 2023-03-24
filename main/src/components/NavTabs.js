@@ -3,10 +3,7 @@ import React from "react";
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <header>
-      <h1
-        href="#about"
-        onClick={() => handlePageChange("About")}
-      >
+      <h1 href="#about" onClick={() => handlePageChange("About")}>
         Jocelyn Chiu
       </h1>
       <nav>

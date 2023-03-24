@@ -4,18 +4,18 @@
   --secondary: #f5ee84;
   --tertiary: #fab162;
   --text: #fffdd0;
-}
-
-html {
-  min-height: 100%;
-}
-
-/* body: background color, fonts, and margin to whole page */
-body {
   background-color: var(--background);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+main {
+  min-height: 90vh;
   margin: 50px;
-  min-height: 100%;
 }
 
 /* all links */
@@ -114,7 +114,8 @@ button {
 /*** about, work, and contact section ***/
 #aboutMe,
 #work,
-#contact {
+#contact,
+#resume {
   margin-right: 15%;
   margin-left: 15%;
   margin-bottom: 100px;
@@ -188,8 +189,6 @@ p {
   opacity: 50%;
 }
 
-#contact {}
-
 .form-group {
   max-width: 700px;
   display: flex;
@@ -205,28 +204,43 @@ p {
   color: var(--text);
 }
 
-.error-text{
+.error-text {
   font-size: 16px;
 }
 
-/* ** Contact section **
-#contact {
+.proficiencies li {
+  list-style-type: circle;
+  color: var(--text);
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  padding: 5px;
+  margin: 0px;
 }
-
-#contact a {
-  color: var(--tertiary);
-  padding: 20px;
-  font-size: 18px;
-} */
 
 /***** Footer Section *****/
 footer {
-  padding: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #111111;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
   position: relative;
-  bottom: 0;
+  bottom: 0px;
+  color: var(--text);
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.icons {
+  margin: auto;
+}
+.icon {
+  width: 30px;
+  padding:10px
 }
 
 /***** media screen: screen sizes for accessibility *****/

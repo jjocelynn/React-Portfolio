@@ -76,8 +76,6 @@ export default function Contact() {
             <input
               value={name}
               name="name"
-              // onMouseEnter={() => setHover(true)}
-              // onMouseLeave={() => handleMouseLeave}
               onChange={handleInputChange}
               onBlur={handleBlur}
               type="name"
@@ -89,8 +87,6 @@ export default function Contact() {
             <input
               value={email}
               name="email"
-              // onMouseEnter={() => setHover(true)}
-              // onMouseLeave={() => handleMouseLeave}
               onChange={handleInputChange}
               onBlur={handleBlur}
               type="email"
@@ -102,8 +98,6 @@ export default function Contact() {
             <textarea
               value={message}
               name="message"
-              // onMouseEnter={() => setHover(true)}
-              // onMouseLeave={() => handleMouseLeave}
               onChange={handleInputChange}
               onBlur={handleBlur}
               class="form-control"
