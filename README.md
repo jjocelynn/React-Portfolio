@@ -6,29 +6,21 @@ Jocelyn's coding portfolio showcases the skills and talents she offers to potent
 
 ## Deployed Application
 
-https://jjocelynn.github.io/jocelyn-coding-portfolio/
+https://jjocelynn.github.io/React-Portfolio/
 
 ## Usage
 
 Through a clean and intuitive interface, users can quickly navagate the page using the clickable links in the navagation bar (located at the top right when the page is fully expanded, and top center when the page width is less than 1007px).
 
-Along with the header, users are greeted with a "Hello..." text introducing Jocelyn as a Full Stack Developer, as well as a large profile icon on the right. Right below the introduction text, is a placeholder button that will bring users to her resumé once it is completed.
+Along with the header, users are greeted with a "Hello..." text introducing Jocelyn as a Full Stack Developer, as well as a large profile icon on the right. 
 
-![header and intro at full width vs at less than 1007px](./assets/images/header-and-intro.jpg)
+![header and intro at full width vs at less than 1007px](./main/public/assets/images/header-and-intro.jpg)
 
 Upon scrolling down, users will be met with an about section detailing more about Jocelyn's skills and history in the field.
 
-![about section screenshot](./assets/images/about-section.jpg)
+The next section, titled "work", showcases fully deployed web applications Jocelyn has been a part of, and is proud to share. When users hover over the images, the image opacity decreases to 50%, links appear, and the border glows orange. This intuitively lets the user know these are clickable links.
 
-The next section, titled "work", showcases fully deployed web applications Jocelyn has been a part of, and is proud to share. When users hover over these images, the image opacity decreases to 50% and the border glows orange. This intuitively lets the user know these are clickable links.
-
-![work section sceenshot](./assets/images/work%20section.jpg)
-
-At the bottom of the page, there is a section titled "contact" where the user can call, email or visit Jocelyn's GitHub.
-
-![contact section screenshot](./assets/images/contact-section.jpg)
-
-At the very bottom, Jocelyn has included a footer with the last updated date. As this is more of a personal touch and is not relavent to employers, it has intentionally been made hard to read.
+The contact section contains a form users can fill out to leave messages.
 
 
 ## Credits
@@ -37,6 +29,3 @@ Wireframe template by Rishabh Singh on Figma: https://www.figma.com/community/fi
 
 ## License
 Please refer to the LICENSE in the repo.
-
-## Wireframe Mockup
-![contact section screenshot](./assets/images/Wireframing.png)
