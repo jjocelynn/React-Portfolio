@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
 
 export default function Contact() {
+
   //create state variables for the input form
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");

@@ -238,9 +238,21 @@ footer {
 .icons {
   margin: auto;
 }
+
 .icon {
   width: 30px;
-  padding:10px
+  padding: 10px
+}
+
+.workLink {
+  margin: 20px;
+  font-size: 120%;
+}
+
+.workLink:hover {
+  color: var(--text);
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 /***** media screen: screen sizes for accessibility *****/
