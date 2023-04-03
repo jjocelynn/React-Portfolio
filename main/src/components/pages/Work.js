@@ -32,6 +32,36 @@ export default function About() {
         >
           <img
             class="sub-img"
+            src="assets/images/JDT-Events.jpg"
+            alt="Screenshot of the JDT-Events Details page"
+          />
+          <p class="img-title">JDT EventWorks</p>
+          {hover ? (
+            <div style={hoverStyle}>
+              <a
+                className="workLink"
+                href="https://jdt-events.herokuapp.com/"
+                target="blank"
+              >
+                Deployed Site↗
+              </a>
+              <a
+                className="workLink"
+                href="https://github.com/ThomasCalle/UTOR-PROJECT-03"
+                target="blank"
+              >
+                GitHub Repo↗
+              </a>
+            </div>
+          ) : null}
+        </article>
+        <article
+          className="sub-article"
+          onMouseEnter={onHover}
+          onMouseLeave={onLeave}
+        >
+          <img
+            class="sub-img"
             src="./assets/images/codefolio-screenshot.jpg"
             alt="screenshot of the codefolio page"
           />
@@ -95,7 +125,7 @@ export default function About() {
             src="assets/images/weather-dashboard.jpg"
             alt="screenshot of the weather dashboard site"
           />
-          <p class="img-title">Study Guide</p>
+          <p class="img-title">Weather Dashboard</p>
           {hover ? (
             <div style={hoverStyle}>
               <a
@@ -138,36 +168,6 @@ export default function About() {
               <a
                 className="workLink"
                 href="https://github.com/jjocelynn/work-day-scheduler"
-                target="blank"
-              >
-                GitHub Repo↗
-              </a>
-            </div>
-          ) : null}
-        </article>
-        <article
-          className="sub-article"
-          onMouseEnter={onHover}
-          onMouseLeave={onLeave}
-        >
-          <img
-            class="sub-img"
-            src="assets/images/Javascript-quiz.jpg"
-            alt="Screenshot of the JavaScript Quiz start page"
-          />
-          <p class="img-title">JavaScript Quiz</p>
-          {hover ? (
-            <div style={hoverStyle}>
-              <a
-                className="workLink"
-                href="https://jjocelynn.github.io/javascript-fundamental-quiz/"
-                target="blank"
-              >
-                Deployed Site↗
-              </a>
-              <a
-                className="workLink"
-                href="https://github.com/jjocelynn/javascript-fundamental-quiz"
                 target="blank"
               >
                 GitHub Repo↗
